@@ -23,6 +23,8 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Inicio Primeira pagina */
+
 #person{
     height: 100vh;
     width: 100%;
@@ -236,6 +238,8 @@ z-index: 1;
 
 /* Final primeira pagina */
 
+/* Inicio About */
+
 #about{
     height: 100vh;
     width: 100%;
@@ -364,6 +368,8 @@ z-index: 1;
     transition: all .3s ease;
     filter: brightness(.8);
 }
+
+/* Final Sobre */
 
 @keyframes  written_text {
     100% {
