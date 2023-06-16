@@ -194,22 +194,24 @@ z-index: 1;
         linear-gradient(90deg, transparent 30%, var(--color-black)),
         linear-gradient(180deg, transparent 30%, var(--color-black)),
         linear-gradient(0deg, transparent 65%, var(--color-black));
-
-}
-
-.wrapper-profile-photo {
-    display: flex;
+        
+    }
+    
+    
+    
+    .wrapper-profile-photo {
+        display: flex;
     justify-content: center;
     align-items: center;
     
     padding: 14px;
     margin: 20px, 15px;
-
+    
     border-radius: 50%;
     background: 
-        radial-gradient(rgba(0,0,0,0.15) 60%, transparent 0),
-        radial-gradient( #000 68%, transparent 0),
-        linear-gradient(to top right, #ffa500 0%, #ff1493 100%);
+    radial-gradient(rgba(0,0,0,0.15) 60%, transparent 0),
+    radial-gradient( #000 68%, transparent 0),
+    linear-gradient(to top right, #ffa500 0%, #ff1493 100%);
 }
 
 
@@ -221,7 +223,7 @@ z-index: 1;
 .links a img{
     width: 30px;
     height: 30px;
-
+    
     margin: 10px;
     filter: brightness(.8);
     transition: all.3s ease;
@@ -233,6 +235,63 @@ z-index: 1;
 }
 
 /* Final primeira pagina */
+
+.about {
+    height: 100vh;
+    width: 100%;
+    background: var(--color-black);
+    
+    display: flex;
+    color: var(--color-white);
+}
+
+.background-about {
+    width: 50%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrapper {
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+}
+
+.img-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+    background: 
+    linear-gradient(.25turn, transparent 30%, var(--color-black)),
+    linear-gradient(.5turn, transparent 30%, var(--color-black)),
+    linear-gradient(1turn, transparent 65%, var(--color-black));
+}
+
+.img-wrapper img{
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+}
+
+.box-about{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 50%;
+
+    padding: 3rem;
+}
 
 @keyframes  written_text {
     100% {
